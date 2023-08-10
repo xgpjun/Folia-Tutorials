@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '小钢炮的Folia浅析',
-  tagline: '👀👀👀',
+  title: 'Folia服务器插件开发教程',
+  tagline: '小钢炮的Folia浅析',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
