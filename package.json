@@ -1,6 +1,6 @@
 {
-  "name": "wiki-template",
-  "version": "0.0.0",
+  "name": "folia_tutorial",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
