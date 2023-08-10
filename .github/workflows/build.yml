@@ -39,7 +39,7 @@ jobs:
       shell: bash
     # 生成PDF
     - name: Build PDF
-      run: sudo docker run --rm -v ${{ github.workspace }}/pdf:/app/pdf iseason/docusaurus-to-pdf -u https://neige7.github.io/Banker-Wiki/intro --output pdf/Banker-Wiki.pdf
+      run: sudo docker run --rm -v ${{ github.workspace }}/pdf:/app/pdf iseason/docusaurus-to-pdf -u https://xgpjun.github.io/Folia-Tutorials/intro --output pdf/Folia-Tutorials.pdf
     # 生成英文PDF
 #     - name: Build English PDF
 #       run: sudo docker run --rm -v ${{ github.workspace }}/pdf:/app/pdf iseason/docusaurus-to-pdf -u https://neige7.github.io/Banker-Wiki/en/intro --output pdf/Banker-Wiki-English.pdf
@@ -87,8 +87,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
-        asset_path: Banker-Wiki.pdf
-        asset_name: Banker-Wiki.pdf
+        asset_path: Folia-Tutorials.pdf
+        asset_name: Folia-Tutorials.pdf
         asset_content_type: application/zip
     # 向release上传Banker-Wiki-English.pdf
 #     - name: Upload PDF file to Release
