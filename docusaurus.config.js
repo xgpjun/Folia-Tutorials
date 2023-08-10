@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wiki-Template',
-  tagline: 'Docusaurus 插件文档模板',
+  title: '小钢炮的Folia浅析',
+  tagline: '👀👀👀',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://neige7.github.io',
+  url: 'https://xgpjun.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Wiki-Template/',
+  baseUrl: '/Folia-Tutorials/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'neige7', // Usually your GitHub org/user name.
-  projectName: 'Wiki-Template', // Usually your repo name.
+  organizationName: 'xgpjun', // Usually your GitHub org/user name.
+  projectName: 'Folia-Tutorials', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -43,7 +43,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/Neige7/Wiki-Template/blob/main'
+            'https://github.com/xgpjun/Folia-Tutorials/blob/main'
         },
         blog: false,
         theme: {
@@ -59,7 +59,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Wiki-Template',
+        title: 'Tutorials',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
@@ -67,10 +67,10 @@ const config = {
         hideOnScroll: false,
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '开始',
+            label: 'Tutorial',
           },
           // 搜索框
           {
@@ -78,14 +78,14 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/Neige7/Wiki-Template',
+            href: 'https://github.com/xgpjun/Folia-Tutorials',
             label: 'GitHub',
             position: 'right',
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
         ],
       },
       // 底部链接
@@ -93,7 +93,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: 'Docs',
             items: [
               {
                 label: '开始',
@@ -102,26 +102,34 @@ const config = {
             ],
           },
           {
-            title: '交流',
+            title: '联系方式',
             items: [
               {
                 label: 'QQ群',
-                href: 'https://jq.qq.com/?_wv=1027&k=QKurhX6E',
+                href: 'https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=SY19EvEiFZvqx_mwGSvYn5N-NkgoiqBd&authKey=ch4cQrooW0WGSG9IlomgJH43qyhE8W8alImhOM%2FUbhcTSTb7f1nH%2Fq5k7KlhRhX8&noverify=0&group_code=851355982',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/pAA54hqX',
+              },
+              {
+                label: 'MCBBS',
+                href: 'https://www.mcbbs.net/home.php?mod=space&uid=4042572',
               },
             ],
           },
           {
-            title: '插件发布',
+            title: 'More',
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Neige7/Wiki-Template',
+                href: 'https://github.com/xgpjun/Folia-Tutorials',
               },
             ],
           },
         ],
         // 底部版权信息
-        copyright: `Copyright © ${new Date().getFullYear()} Neige, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 小钢炮君, Inc. Built with Docusaurus.`,
       },
       // 深浅主题
       prism: {
