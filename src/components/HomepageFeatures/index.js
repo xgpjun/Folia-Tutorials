@@ -3,33 +3,6 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: '简单易用',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        就这点配置有啥难的.
-      </>
-    ),
-  },
-  {
-    title: '文档详细',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        看完文档学不会怎么用说明你是个傻逼.
-      </>
-    ),
-  },
-  {
-    title: '功能强大',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        多说无益, 用用就知道了.
-      </>
-    ),
-  },
 ];
 
 function Feature({Svg, title, description}) {
